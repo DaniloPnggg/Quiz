@@ -293,6 +293,7 @@ function selectedAnswer(e) {
         }
     })
         nextButton.style.display = `block`
+    nextButton.disabled = false
 }
 
 function resetState() {
@@ -315,6 +316,7 @@ function nextButtonFn() {
     } else {
         showScore()
     }
+    nextButton.disabled = false
 }
 
 nextButton.addEventListener(`click`, () => {
@@ -323,6 +325,8 @@ nextButton.addEventListener(`click`, () => {
     } else {
         startQuiz()
     }
+
 })
+
 
 startQuiz()
